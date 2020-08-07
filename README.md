@@ -11,6 +11,7 @@ to do
 - to activate environment: `source venv/bin/activate`
 - to deactivate: `deactivate`
 - install dependancies: `pip install -r requirements.txt` (we need this to download packages for google maps, etc)
+- create a `.env` file (same directory as .env.sample) and add the secret key
 
 ## Local server start
 
