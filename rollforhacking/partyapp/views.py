@@ -6,7 +6,7 @@ from django.conf import settings
 def index(request):
 
     return render(request, "partyapp/index.html", {
-        "page_title": "Enginering Stores",
+        "page_title": "Party",
         "description": "Play games with your friends, wherever you are!"
     })
 
