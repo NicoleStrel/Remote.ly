@@ -26,4 +26,5 @@ urlpatterns = [
     path('games/catchthefishies/', views.fishgame, name='fishgame'),
 
     path('fontawesome/', include("django_static_fontawesome.urls")),
+    path('accounts/', include('allauth.urls')),
 ]
