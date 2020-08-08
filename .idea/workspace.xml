@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45ab5961-f364-4933-866c-37a8e604e19f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/rollforhacking/partyapp/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rollforhacking/partyapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rollforhacking/partyapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rollforhacking/rollforhacking/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rollforhacking/rollforhacking/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollforhacking/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/rollforhacking/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollforhacking/partyapp/static/styles/games.css" beforeDir="false" afterPath="$PROJECT_DIR$/rollforhacking/partyapp/static/styles/games.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollforhacking/partyapp/templates/partyapp/games/ponggame.html" beforeDir="false" afterPath="$PROJECT_DIR$/rollforhacking/partyapp/signals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollforhacking/partyapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rollforhacking/partyapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollforhacking/rollforhacking/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rollforhacking/rollforhacking/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1fngzcdfDq0GnpSWizp69eltI2t" />
@@ -56,22 +63,30 @@
       <option name="project" value="LOCAL" />
       <updated>1596898559612</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added location and points to user model&#10;added location to signup form">
+      <created>1596900905476</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596900905476</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="requirements.txt updated for all_auth" />
     <MESSAGE value="all_auth merged and updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="all_auth merged and updated" />
+    <MESSAGE value="added location and points to user model&#10;added location to signup form" />
+    <option name="LAST_COMMIT_MESSAGE" value="added location and points to user model&#10;added location to signup form" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1596898558662">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1596900904558">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1596898558662" />
-    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1596898565118">
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1596900904558" />
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1596900911023">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1596898565118" />
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1596900911023" />
   </component>
 </project>

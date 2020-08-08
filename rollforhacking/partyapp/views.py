@@ -17,6 +17,12 @@ def fishgame(request):
         "description": "Catch the most Fish!",
     })
 
+def deckgame(request):
+
+    return render(request, "partyapp/games/deckgame.html", {
+        "page_title": "All Hands On Deck"
+    })
+
 def signin(request):
     return render(request, "partyapp/signin.html", {
         "page_title": "Remote.ly - Sign In",
@@ -35,4 +41,3 @@ def letsplay(request):
         "page_title": "Remote.ly - Let's Play!",
         "description": "Are you ready to play fun games with your friends?",
     }) 
-
