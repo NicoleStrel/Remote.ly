@@ -29,4 +29,5 @@ sqlparse==0.3.1
 Unidecode==1.1.1
 urllib3==1.25.10
 virtualenv==20.0.30
-whitenoise==5.2.0
+whitenoise==3.2
+django.utils.six

@@ -1,0 +1,217 @@
+/* --------------------
+     GAME BASE
+----------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+
+.game-header{
+    height: 100px;
+}
+.game-footer{
+    height: 100px;
+}
+
+:root {
+    --light-blue: rgb(176, 216, 255);
+    --med-blue: rgb(70, 139, 243);
+
+    --width: 800px;
+    --shorted-width: 770px; /* for responsiveness with animation*/
+
+}
+
+
+/* --------------------
+     FISH GAME
+----------------------*/
+
+.fish-game{
+    background-color: var(--light-blue);
+}
+.fish-game p, .fish-game h3, .fish-game div, .model h1, .modal p, .modal div{
+    font-family: 'Bubbler One', sans-serif;
+}
+.fish-game h1{
+    font-family: 'Monofett', cursive;
+    color: var(--med-blue);
+    font-size: 6em;
+    padding-top: 0.5em;
+    margin: 0;
+}
+
+#water{
+    width: var(--width);
+    padding: 2em;
+    border-radius: 5em;
+    border-collapse: separate; 
+    display: block;
+    margin-left: 0;
+}
+.fish-tank{
+    position: relative;
+    width: var(--width);
+    height: auto;
+    margin-left: 2em;
+
+}
+ 
+.interactive{
+    display:inline-block
+} 
+.before{
+    display: flex;
+    flex-direction: row;
+}
+.ready-button{
+
+  width: 100px;
+  border: 2px solid var(--med-blue);
+  color: white;
+  background-color: var(--med-blue);
+  border-radius: 1.5em;
+  padding: 0.4em 0.9em;
+}
+
+.ready-button:hover{
+    background-color: white;
+    color: var(--med-blue);
+    border: 2px solid white;
+}
+#inline-extra{
+    display: none;
+    padding-left: 10px;
+    margin: 0;
+    margin-top: 0.5em;
+}
+.fish{
+    width: 50px;
+    position: absolute;
+    top:30px;
+    
+}
+
+@keyframes swim-right {
+    0%   {left:30px; }
+    100% {left:var(--shorted-width); }
+  }
+
+@keyframes swim-left {
+    0%   {left:var(--shorted-width); }
+    100% {left:30px;}
+}
+
+/* modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    width: 30%;
+    border-radius: 1em;
+}
+
+.go-back-btn{
+    width: 150px;
+    border: 2px solid var(--med-blue);
+    color: white;
+    background-color: var(--med-blue);
+    border-radius: 1.5em;
+    padding: 0.4em 0.9em;
+}
+.go-back-btn:hover{
+    background-color: white;
+    color: var(--med-blue);
+
+}
+.collected-points{
+    padding-bottom: 1em;
+}
+
+#time{
+    font-size: 3em;
+    
+    padding: 0.1em;
+}
+.fish-points{
+    color: var(--med-blue);
+    font-weight: bold;
+}
+
+
+/* --------------------
+     Media Queries
+----------------------*/
+@media screen and (max-width: 937px) {
+    :root {
+        --width: 500px;
+        --shorted-width: 490px; /* for responsiveness with animation*/
+    }
+    .fish{
+        width: 35px;
+    }
+    .fish-game h1{
+        font-size: 4em;
+    }
+    #time{
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 631px) {
+
+    :root {
+        --width: 300px;
+        --shorted-width: 299px; /* for responsiveness with animation*/
+    }
+    .fish{
+        width: 20px;
+    }
+    .fish-game h1{
+        font-size: 2.5em;
+    }
+    #time{
+        font-size: 2em;
+    }
+    .go-back-btn{
+        width: 100px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 410px) {
+
+    :root {
+        --width: 220px;
+        --shorted-width: 220px; /* for responsiveness with animation*/
+    }
+    .fish{
+        width: 15px;
+    }
+    .fish-game h1{
+        font-size: 2em;
+    }
+    #time{
+        font-size: 1.5em;
+    }
+    .go-back-btn{
+        width: 70px;
+    }
+
+}
+
