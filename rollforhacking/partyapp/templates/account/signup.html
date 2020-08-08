@@ -1,0 +1,63 @@
+{% extends 'partyapp/base.html' %}
+{% load filters %}
+
+{% block content %}
+
+  {% load static %}
+  <body  style="background-color: #E9C46A; ">
+    <div class="container" style="margin-top: 100px;">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xl-3">
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6">
+                <div style="text-align: center;">
+                    <h3 style=" font-weight: bold; font-family: Montserrat;">Sign up to Remote.ly</h3>
+                    <button type="button" class="btn rounded-pill" style="font-weight: bold; width: 300px; color: white; font-family: Montserrat; background-color: #264653;">Sign up using Facebook</button>
+                    <hr>
+
+                    <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}" style=" font-weight: bold; font-family: Montserrat;">
+                      {% csrf_token %}
+                      <!-- {{ form.as_p }}
+                      {% if redirect_field_value %}
+                      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                      {% endif %} -->
+                        {{ form.non_field_errors }}
+                        <div class="form-group">
+                          {{form.username.errors}}
+                          <label for="{{form.username.id_for_label}}">Username</label>
+                          {{form.username | addclass:'form-control'}}
+                          <!-- <input type="text" class="form-control" id="username" > -->
+                        </div>
+                        
+                        <div class="form-group">
+                          {{form.email.errors}}
+                          <label for="form.email.id_for_label">.edu Email address</label>
+                          {{form.email | addclass:'form-control'}}
+                        </div>
+                        <div class="form-group">
+                          {{form.password1.errors}}
+                          <label for="form.password1.id_for_label">Password</label>
+                          {{form.password1 | addclass:'form-control'}}
+                        </div>
+                        <div class="form-group">
+                          {{form.password2.errors}}
+                          <label for="form.password2.id_for_label">Confirm Password</label>
+                          {{form.password2 | addclass:'form-control'}}
+                        </div>
+                            <button type="submit" class="btn rounded-pill" style="font-weight: bold; width: 300px; color: white; font-family: Montserrat; background-color: #E76F51;">Sign up</button>
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xl-3">
+
+            </div>
+        
+
+        </div>
+    </div>
+  </body>
+
+{% endblock %}

@@ -23,17 +23,17 @@ def deckgame(request):
         "page_title": "All Hands On Deck"
     })
 
-def signin(request):
-    return render(request, "partyapp/signin.html", {
-        "page_title": "Remote.ly - Sign In",
-        "description": "Sign In to your account!",
-    })
+# def signin(request):
+#     return render(request, "partyapp/signin.html", {
+#         "page_title": "Remote.ly - Sign In",
+#         "description": "Sign In to your account!",
+#     })
 
-def signup(request):
-    return render(request, "partyapp/signup.html", {
-        "page_title": "Remote.ly - Sign Up",
-        "description": "Make an account with Remote.ly!",
-    }) 
+# def signup(request):
+#     return render(request, "partyapp/signup.html", {
+#         "page_title": "Remote.ly - Sign Up",
+#         "description": "Make an account with Remote.ly!",
+#     }) 
 
 
 def letsplay(request):

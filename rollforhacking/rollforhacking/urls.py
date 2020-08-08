@@ -20,8 +20,8 @@ from partyapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('signin/', views.signin, name='signin'),
-    path('signup/', views.signup, name='signup'),
+    # path('signin/', views.signin, name='signin'),
+    # path('signup/', views.signup, name='signup'),
     path('letsplay/', views.letsplay, name='letsplay'),
     path('games/catchthefishies/', views.fishgame, name='fishgame'),
     path('games/allhandsondeck/', views.deckgame, name='deckgame'),
