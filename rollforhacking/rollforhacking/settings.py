@@ -30,6 +30,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# all_auth settings
+ACCOUNT_SIGNUP_FORM_CLASS = 'partyapp.forms.SignupForm'
 
 # Application definition
 
@@ -140,4 +142,5 @@ SITE_ID = 1
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 django_heroku.settings(locals())

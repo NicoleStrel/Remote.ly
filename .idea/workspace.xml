@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45ab5961-f364-4933-866c-37a8e604e19f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rollforhacking/partyapp/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollforhacking/partyapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rollforhacking/partyapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rollforhacking/rollforhacking/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rollforhacking/rollforhacking/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,21 +49,29 @@
       <option name="project" value="LOCAL" />
       <updated>1596897960059</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="all_auth merged and updated">
+      <created>1596898559612</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596898559612</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="requirements.txt updated for all_auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="requirements.txt updated for all_auth" />
+    <MESSAGE value="all_auth merged and updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="all_auth merged and updated" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1596897958794">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1596898558662">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1596897958794" />
-    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1596897980089">
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1596898558662" />
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1596898565118">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1596897980089" />
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1596898565118" />
   </component>
 </project>
