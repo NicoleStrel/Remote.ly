@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45ab5961-f364-4933-866c-37a8e604e19f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/partyapp/templates/account/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partyapp/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partyapp/templatetags/filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partyapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/partyapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partyapp/static/styles/games.css" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/static/styles/games.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partyapp/templates/partyapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/templates/partyapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partyapp/templates/partyapp/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/templates/account/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partyapp/templates/partyapp/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/partyapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rollforhacking/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rollforhacking/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partyapp/templates/account/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/templates/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +40,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Arsh Noor Amin\RollForHacking\partyapp" />
       <recent name="C:\Users\Arsh Noor Amin\RollForHacking\partyapp\templates" />
+      <recent name="C:\Users\Arsh Noor Amin\RollForHacking\partyapp" />
       <recent name="C:\Users\Arsh Noor Amin\RollForHacking" />
     </key>
   </component>
@@ -77,21 +70,28 @@
       <option name="project" value="LOCAL" />
       <updated>1596898559612</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge remote-tracking branch 'origin/hands_on_deck'&#10;&#10;# Conflicts:&#10;#&#9;db.sqlite3&#10;#&#9;partyapp/static/styles/games.css&#10;#&#9;partyapp/templates/partyapp/signin.html&#10;#&#9;partyapp/templates/partyapp/signup.html&#10;#&#9;partyapp/views.py&#10;#&#9;requirements.txt&#10;#&#9;rollforhacking/partyapp/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/admin.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/models.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/views.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/migrations/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/templates/account/login.html&#10;#&#9;rollforhacking/partyapp/templates/partyapp/signin.html&#10;#&#9;rollforhacking/rollforhacking/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/settings.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/urls.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/wsgi.cpython-38.pyc&#10;#&#9;rollforhacking/urls.py">
+      <created>1596922842035</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596922842035</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="requirements.txt updated for all_auth" />
     <MESSAGE value="all_auth merged and updated" />
-    <MESSAGE value="Merge remote-tracking branch 'origin/hands_on_deck'&#10;&#10;# Conflicts:&#10;#&#9;db.sqlite3&#10;#&#9;partyapp/static/styles/games.css&#10;#&#9;partyapp/templates/partyapp/signin.html&#10;#&#9;partyapp/templates/partyapp/signup.html&#10;#&#9;partyapp/views.py&#10;#&#9;requirements.txt&#10;#&#9;rollforhacking/partyapp/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/admin.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/models.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/views.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/migrations/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/templates/account/login.html&#10;#&#9;rollforhacking/partyapp/templates/partyapp/signin.html&#10;#&#9;rollforhacking/rollforhacking/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/settings.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/urls.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/wsgi.cpython-38.pyc&#10;#&#9;rollforhacking/urls.py" />
     <MESSAGE value="Merge remote-tracking branch 'origin/hands_on_deck'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/hands_on_deck'" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/hands_on_deck'&#10;&#10;# Conflicts:&#10;#&#9;db.sqlite3&#10;#&#9;partyapp/static/styles/games.css&#10;#&#9;partyapp/templates/partyapp/signin.html&#10;#&#9;partyapp/templates/partyapp/signup.html&#10;#&#9;partyapp/views.py&#10;#&#9;requirements.txt&#10;#&#9;rollforhacking/partyapp/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/admin.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/models.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/views.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/migrations/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/templates/account/login.html&#10;#&#9;rollforhacking/partyapp/templates/partyapp/signin.html&#10;#&#9;rollforhacking/rollforhacking/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/settings.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/urls.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/wsgi.cpython-38.pyc&#10;#&#9;rollforhacking/urls.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/hands_on_deck'&#10;&#10;# Conflicts:&#10;#&#9;db.sqlite3&#10;#&#9;partyapp/static/styles/games.css&#10;#&#9;partyapp/templates/partyapp/signin.html&#10;#&#9;partyapp/templates/partyapp/signup.html&#10;#&#9;partyapp/views.py&#10;#&#9;requirements.txt&#10;#&#9;rollforhacking/partyapp/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/admin.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/models.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/views.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/migrations/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/templates/account/login.html&#10;#&#9;rollforhacking/partyapp/templates/partyapp/signin.html&#10;#&#9;rollforhacking/rollforhacking/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/settings.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/urls.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/wsgi.cpython-38.pyc&#10;#&#9;rollforhacking/urls.py" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1596921581475">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1596922854166">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596921581475" />
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596922854166" />
     <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1596898558662" />
     <state x="129" y="65" key="MergeDialog" timestamp="1596920926579">
       <screen x="0" y="0" width="1366" height="768" />
@@ -101,9 +101,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="395" y="101" width="910" height="566" key="MultipleFileMergeDialog/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596920926612" />
-    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1596898565118">
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1596922869313">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596922869313" />
     <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1596898565118" />
     <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596920580962">
       <screen x="0" y="0" width="1366" height="768" />

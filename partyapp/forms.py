@@ -1,8 +1,8 @@
 from django import forms
 
 class SignupForm(forms.Form):
-    lat = forms.DecimalField(max_digits=9, decimal_places=6)
-    lng = forms.DecimalField(max_digits=9, decimal_places=6)
+    lat = forms.DecimalField(max_digits=9, decimal_places=6, required=False)
+    lng = forms.DecimalField(max_digits=9, decimal_places=6, required=False)
 
     def signup(self, request, user):
         profile = user.profile

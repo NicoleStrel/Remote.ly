@@ -7,8 +7,8 @@ from django.dispatch import receiver
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, related_name='profile', on_delete=models.CASCADE)
-    lat = models.DecimalField(max_digits=9, decimal_places=6, null=True)
-    lng = models.DecimalField(max_digits=9, decimal_places=6, null=True)
+    lat = models.DecimalField(max_digits=9, decimal_places=6, null=True, blank=True)
+    lng = models.DecimalField(max_digits=9, decimal_places=6, null=True, blank=True)
     points = models.IntegerField(null=True)
 
 @receiver(post_save, sender=User)
