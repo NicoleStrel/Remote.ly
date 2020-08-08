@@ -24,6 +24,7 @@ urlpatterns = [
     # path('signup/', views.signup, name='signup'),
     path('signup/avatar', views.avatar, name='avatar'),
     path('letsplay/', views.letsplay, name='letsplay'),
+    path('games/', views.gamedash, name='gamedash'),
     path('games/catchthefishies/', views.fishgame, name='fishgame'),
     path('games/allhandsondeck/', views.deckgame, name='deckgame'),
 
