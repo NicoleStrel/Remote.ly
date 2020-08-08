@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 .game-header{
     height: 100px;
 }
@@ -43,6 +44,7 @@
     padding-top: 0.5em;
     margin: 0;
 }
+
 /* --------------------
      FISH GAME
 ----------------------*/
