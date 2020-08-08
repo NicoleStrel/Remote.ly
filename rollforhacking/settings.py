@@ -29,7 +29,10 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'remote--ly.herokuapp.com'
+    'remote--ly.herokuapp.com',
+    'remote-ly.online',
+    'www.remote-ly.online',
+    '127.0.0.1'
 ]
 
 # all_auth settings
