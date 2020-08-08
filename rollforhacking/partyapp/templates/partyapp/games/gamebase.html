@@ -1,0 +1,19 @@
+{% extends 'partyapp/base.html' %}
+
+{% block content %}
+
+  {% load static %}
+    <!--Haader-->
+    <div class="game-header">
+    <p>header</p>
+    </div>
+
+    {% block game %}
+    {% endblock %}
+
+    <!--footer-->
+    <div class="game-footer">
+        <p>footer</p>
+    </div>  
+
+{% endblock %}

@@ -13,6 +13,6 @@ def index(request):
 def fishgame(request):
 
     return render(request, "partyapp/games/fishgame.html", {
-        "page_title": "Fish Game",
+        "page_title": "Catch The Fishies",
         "description": "Catch the most Fish!",
     })

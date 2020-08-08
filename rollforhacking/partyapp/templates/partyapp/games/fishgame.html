@@ -1,8 +1,51 @@
-{% extends 'partyapp/base.html' %}
+{% extends 'partyapp/games/gamebase.html' %}
 
-{% block content %}
+{% block game %}
 
   {% load static %}
-    <p>Fish game</p>
+   <center>
+     <!-- Game-->
+    <div class="fish-game">
+      <h1>Catch the Fishies</h1>
+      <p>The player that clicks on the most fishes wins.</p>
+      
+      <h3 class="are-you-ready">Are YOU ready?</h3>
+      <div class="interactive">
+      <div class="before">
+        <div class="ready-button">I'm Ready</div>
+        <p id="inline-extra">Waiting for other players..</p>
+      </div>
+      <!--Timer-->
+      <div id="time"></div>
+      <p class="fish-points"></p>
+    </div>
+    <div class="fish-tank" >
+        <img id= "water" src="{% static "img/fish-game-bg.png" %}" alt="Fish Game Background">
+
+        <!--invisible, just to declare them-->
+        <img id="fish-1" style="display: none" src="{% static "img/fish-1.svg" %}" alt="Fish 1">
+        <img id="fish-2" style="display: none" src="{% static "img/fish-2.svg" %}" alt="Fish 2">
+        <img id="fish-3" style="display: none" src="{% static "img/fish-3.svg" %}" alt="Fish 3">
+        <img id="fish-4" style="display: none" src="{% static "img/fish-4.svg" %}" alt="Fish 4">
+        <img id="fish-5" style="display: none" src="{% static "img/fish-5.svg" %}" alt="Fish 5">
+        <img id="fish-6" style="display: none" src="{% static "img/fish-6.svg" %}" alt="Fish 6">
+
+      </div>
+    </div>
+    
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <h1>Game Over.</h1>
+        <p class="collected-points"></p>
+        <a class="nav-link" href="{%url "index" %}">
+          <div class="go-back-btn">Back to Game Menu</div>
+        </a>
+      </div>
+    </div>
+  </center>
+
+   
 
 {% endblock %}

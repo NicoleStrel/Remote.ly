@@ -20,5 +20,5 @@ from partyapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('fishgame/', views.fishgame, name='fishgame'),
+    path('games/catchthefishies/', views.fishgame, name='fishgame'),
 ]
