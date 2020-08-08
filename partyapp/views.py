@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.conf import settings
-
+from .models import UserProfile
+from django.core import serializers
 # Create your views here.
 def index(request):
 
@@ -41,8 +42,20 @@ def avatar(request):
 
 
 def letsplay(request):
-    return render(request, "partyapp/letsplay.html", {
+    #users= UserProfile.objects.all()
+    json_serializer = serializers.get_serializer("json")()
+    users = json_serializer.serialize(UserProfile.objects.all())
+    users_html=UserProfile.objects.all()
+    return render(request, "partyapp/map.html", {
+        "users": users,
+        "users_html": users_html,
         "page_title": "Remote.ly - Let's Play!",
         "description": "Are you ready to play fun games with your friends?",
+    }) 
+
+def gamedash(request):
+    return render(request, "partyapp/gamedashboard.html", {
+        "page_title": "Remote.ly - Games",
+        "description": "Find a game and play it :)",
     }) 
 
