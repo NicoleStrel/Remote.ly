@@ -16,7 +16,7 @@
                     <button type="button" class="btn rounded-pill" style="font-weight: bold; width: 300px; color: white; font-family: Montserrat; background-color: #264653;">Sign in using Facebook</button>
                     <hr>
 
-                    <form class="login" method="POST" action="{% url 'account_login' %}" style=" font-weight: bold; font-family: Montserrat;">
+                    <form class="login" method="POST" action="{% url 'letsplay' %}" style=" font-weight: bold; font-family: Montserrat;">
                         {% csrf_token %}
 
                         {{ form.non_field_errors }}
@@ -30,7 +30,9 @@
                           <label for="form.password.id_for_label">Password</label>
                           {{form.password | addclass:'form-control'}}
                         </div>
+
                           <button type="submit" class="btn rounded-pill" style="font-weight: bold; width: 300px; color: white; font-family: Montserrat; background-color: #E76F51;">Sign in</button>
+                      
                       </form>
 
                 </div>

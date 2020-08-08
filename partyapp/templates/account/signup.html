@@ -16,7 +16,7 @@
                     <button type="button" class="btn rounded-pill" style="font-weight: bold; width: 300px; color: white; font-family: Montserrat; background-color: #264653;">Sign up using Facebook</button>
                     <hr>
 
-                    <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}" style=" font-weight: bold; font-family: Montserrat;">
+                    <form class="signup" id="signup_form" method="post" action="{% url 'avatar' %}" style=" font-weight: bold; font-family: Montserrat;">
                       {% csrf_token %}
                       <!-- {{ form.as_p }}
                       {% if redirect_field_value %}
@@ -45,7 +45,9 @@
                           <label for="form.password2.id_for_label">Confirm Password</label>
                           {{form.password2 | addclass:'form-control'}}
                         </div>
+                      
                             <button type="submit" class="btn rounded-pill" style="font-weight: bold; width: 300px; color: white; font-family: Montserrat; background-color: #E76F51;">Sign up</button>
+             
                     </form>
 
                 </div>
