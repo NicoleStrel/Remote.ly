@@ -24,7 +24,8 @@ urlpatterns = [
     path('signup/', views.signup, name='signup'),
     path('letsplay/', views.letsplay, name='letsplay'),
     path('games/catchthefishies/', views.fishgame, name='fishgame'),
-
+    path('games/allhandsondeck/', views.deckgame, name='deckgame'),
+    
     path('fontawesome/', include("django_static_fontawesome.urls")),
     path('accounts/', include('allauth.urls')),
 ]

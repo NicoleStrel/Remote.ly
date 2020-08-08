@@ -3,7 +3,7 @@
 ----------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 .game-header{
     height: 100px;
 }
@@ -15,12 +15,34 @@
     --light-blue: rgb(176, 216, 255);
     --med-blue: rgb(70, 139, 243);
 
+    /** for deck game **/
+    --poker-red: rgb(192, 57, 43);
+    --black: rgb(27, 27, 27);
+
     --width: 800px;
     --shorted-width: 770px; /* for responsiveness with animation*/
 
 }
 
+/* ---------------------------------
+     ALL HANDS ON DECK GAME
+------------------------------------*/
+.deck-game {
+    background-color: var(--black);
+}
+.deck-game p, .deck-game h3, .deck-game div {
+    font-family: 'Roboto Slab', sans-serif;
+    color: white;
+}
 
+.deck-game h1 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 500;
+    color: var(--poker-red);
+    font-size: 4em;
+    padding-top: 0.5em;
+    margin: 0;
+}
 /* --------------------
      FISH GAME
 ----------------------*/
@@ -28,7 +50,7 @@
 .fish-game{
     background-color: var(--light-blue);
 }
-.fish-game p, .fish-game h3, .fish-game div, .model h1, .modal p, .modal div{
+.fish-game p, .fish-game h3, .fish-game div, .modal h1, .modal p, .modal div{
     font-family: 'Bubbler One', sans-serif;
 }
 .fish-game h1{

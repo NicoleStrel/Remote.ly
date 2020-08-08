@@ -16,6 +16,11 @@ def fishgame(request):
         "page_title": "Catch The Fishies",
         "description": "Catch the most Fish!",
     })
+def deckgame(request):
+
+    return render(request, "partyapp/games/deckgame.html", {
+        "page_title": "All Hands On Deck"
+    })
 
 def signin(request):
     return render(request, "partyapp/signin.html", {
