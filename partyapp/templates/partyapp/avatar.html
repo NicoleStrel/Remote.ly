@@ -1,0 +1,79 @@
+{% extends 'partyapp/base.html' %}
+
+{% block content %}
+
+  {% load static %}
+  <body  style="background-color: #E9C46A; ">
+    <div class="container" style="margin-top: 100px; font-weight: bold; font-family: Montserrat;">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xl-3">
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6">
+                <div style="text-align: center;">
+                    <h3 style=" font-weight: bold; font-family: Montserrat;">Welcome to Remote.ly, Name!</h3>
+                    <h5 style=" font-weight: bold; font-family: Montserrat; color: white;">Just a few more steps...</h5>
+                    <h6 style=" font-weight: bold; font-family: Montserrat;"> Choose an Avatar:</h6>
+                    <hr>
+
+                    <style>
+                        img{
+                            width: 100px;
+                            height: 100p;
+                            margin-top: 10px;
+                            border-width: medium;
+                            border: solid 1px black;
+                            padding: 2px;
+                            cursor: pointer;
+                            border-radius:1em;
+                        }
+                    </style>
+
+                    <div class="row">
+                        <div class="col"> 
+                          <img id="avatar-1" onClick="updateAv(1);" src="{% static "img/icons-images/emoji.png" %}" />
+                        </div>
+                        <div class="col">
+                            <img id="avatar-2" onClick="updateAv(2);" src="{% static "img/icons-images/029-woman.png" %}" />
+                        </div>
+                        <div class="col">
+                            <img id="avatar-3" onClick="updateAv(3);" src="{% static "img/icons-images/038-man.png" %}" />
+                        </div>
+                        <div class="col">
+                            <img id="avatar-4" onClick="updateAv(4);" src="{% static "img/icons-images/049-woman.png" %}" />
+                          </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col">
+                            <img id="avatar-5" onClick="updateAv(5);" src="{% static "img/icons-images/smile.png" %}" />
+                        </div>
+                        <div class="col">
+                            <img id="avatar-6" onClick="updateAv(6);" src="{% static "img/icons-images/025-man.png" %}" />
+                        </div>
+                        <div class="col">
+                            <img id="avatar-7" onClick="updateAv(7);" src="{% static "img/icons-images/031-woman.png" %}" />
+                        </div>
+                        <div class="col">
+                            <img id="avatar-8" onClick="updateAv(8);" src="{% static "img/icons-images/018-man.png" %}" />
+                          </div>
+                      </div>
+
+                   <hr>
+                   <a href="{%url "letsplay" %}">
+                        <button class="btn rounded-pill" style="background-color: #F4A261; width: 200px;  font-weight: bold; font-family: Montserrat; color: white;">Next ></button>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xl-3">
+
+            </div>
+        
+
+        </div>
+    </div>
+    </body>
+
+{% endblock %}

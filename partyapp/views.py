@@ -33,6 +33,11 @@ def signup(request):
         "page_title": "Remote.ly - Sign Up",
         "description": "Make an account with Remote.ly!",
     }) 
+def avatar(request):
+    return render(request, "partyapp/avatar.html", {
+        "page_title": "Remote.ly - Sign Up - Avatar",
+        "description": "Choose an avatar for your account!",
+    }) 
 
 
 def letsplay(request):

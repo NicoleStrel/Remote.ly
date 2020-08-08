@@ -41,6 +41,18 @@
     function closeRightMenu() {
         document.getElementById("rightMenu").style.display = "none";
     }
+    function updateAv(num) {
+        var idname="avatar-"+num;
+        console.log(idname);
+        //revert old:
+        for (let i=1; i<9; i++){
+            var name="avatar-"+i;
+            document.getElementById(name).style.cssText="border: solid 1px black";
+        }
+        document.getElementById(idname).style.cssText="border: solid 1px white";
+    }
+
+    
     </script>
 </body>
 </html>
