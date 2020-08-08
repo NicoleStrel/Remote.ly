@@ -14,11 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from partyapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+    path('signin/', views.signin, name='signin'),
+    path('signup/', views.signup, name='signup'),
+    path('letsplay/', views.letsplay, name='letsplay'),
     path('games/catchthefishies/', views.fishgame, name='fishgame'),
+
+    path('fontawesome/', include("django_static_fontawesome.urls")),
 ]

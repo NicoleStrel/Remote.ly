@@ -6,7 +6,7 @@ from django.conf import settings
 def index(request):
 
     return render(request, "partyapp/index.html", {
-        "page_title": "Party",
+        "page_title": "Remote.ly",
         "description": "Play games with your friends, wherever you are!"
     })
 
@@ -16,3 +16,23 @@ def fishgame(request):
         "page_title": "Catch The Fishies",
         "description": "Catch the most Fish!",
     })
+
+def signin(request):
+    return render(request, "partyapp/signin.html", {
+        "page_title": "Remote.ly - Sign In",
+        "description": "Sign In to your account!",
+    })
+
+def signup(request):
+    return render(request, "partyapp/signup.html", {
+        "page_title": "Remote.ly - Sign Up",
+        "description": "Make an account with Remote.ly!",
+    }) 
+
+
+def letsplay(request):
+    return render(request, "partyapp/letsplay.html", {
+        "page_title": "Remote.ly - Let's Play!",
+        "description": "Are you ready to play fun games with your friends?",
+    }) 
+

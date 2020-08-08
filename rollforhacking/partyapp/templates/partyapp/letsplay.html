@@ -1,0 +1,47 @@
+{% extends 'partyapp/base.html' %}
+
+{% block content %}
+
+  {% load static %}
+    <body style="background-color: #E9C46A;  font-weight: bold;">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: Montserrat;">
+            <a class="navbar-brand" href="{%url "index" %}">REMOTE.LY</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <p>Name </p>
+                <p style="margin: 10px; ">
+                    <i class="fa fa-user-secret fa-2x" aria-hidden="true"></i></p>
+            
+            </form>
+            </div>
+            
+        </nav>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xl-3" >
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xl-6" style="text-align:center; margin-top: 200px;">
+                    <h3 style=" font-family: Montserrat; font-weight: bold; ">Let's Play!</h3>
+                    <button type="button" class="btn rounded-pill";  style="font-weight: bold; background-color: #E76F51; color: white; width: 250px; margin-top: 15px; font-family: Montserrat;">New Game</button><br>
+                    <button type="button" class="btn rounded-pill" ; style="font-weight: bold; background-color: #F4A216; color: white; width: 250px; margin-top: 15px; font-family: Montserrat;">Continue Game</button><br>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xl-3" style="margin-top: 100px;">
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+
+{% endblock %}
