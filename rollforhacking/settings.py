@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
-import django_heroku
+# import django_heroku
 from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -28,8 +28,12 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'remote--ly.herokuapp.com'
+]
 
+# all_auth settings
+ACCOUNT_SIGNUP_FORM_CLASS = 'partyapp.forms.SignupForm'
 
 # Application definition
 
@@ -138,6 +142,9 @@ SITE_ID = 1
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-django_heroku.settings(locals())
+
+# django_heroku.settings(locals())
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
