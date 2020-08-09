@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45ab5961-f364-4933-866c-37a8e604e19f" name="Default Changelist" comment="some clean up">
-      <change afterPath="$PROJECT_DIR$/partyapp/static/img/deck-game-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partyapp/static/js/deckGame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partyapp/static/styles/games.css" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/static/styles/games.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partyapp/templates/partyapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/templates/partyapp/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partyapp/templates/partyapp/games/deckgame.html" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/templates/partyapp/games/deckgame.html" afterDir="false" />
-    </list>
+    <list default="true" id="45ab5961-f364-4933-866c-37a8e604e19f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596925054935</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updated the all hands on the deck game">
+      <created>1596958262175</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596958262176</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -108,13 +107,14 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/hands_on_deck'&#10;&#10;# Conflicts:&#10;#&#9;db.sqlite3&#10;#&#9;partyapp/static/styles/games.css&#10;#&#9;partyapp/templates/partyapp/signin.html&#10;#&#9;partyapp/templates/partyapp/signup.html&#10;#&#9;partyapp/views.py&#10;#&#9;requirements.txt&#10;#&#9;rollforhacking/partyapp/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/admin.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/models.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/views.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/migrations/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/templates/account/login.html&#10;#&#9;rollforhacking/partyapp/templates/partyapp/signin.html&#10;#&#9;rollforhacking/rollforhacking/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/settings.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/urls.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/wsgi.cpython-38.pyc&#10;#&#9;rollforhacking/urls.py" />
     <MESSAGE value="fixed a signup error" />
     <MESSAGE value="some clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="some clean up" />
+    <MESSAGE value="updated the all hands on the deck game" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated the all hands on the deck game" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="354" y="-768" key="CommitChangelistDialog2" timestamp="1596925083349">
-      <screen x="-158" y="-1050" width="1680" height="1050" />
+    <state x="312" y="51" width="691" height="621" key="CommitChangelistDialog2" timestamp="1596958260012">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="354" y="-768" key="CommitChangelistDialog2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596925083349" />
+    <state x="312" y="51" width="691" height="621" key="CommitChangelistDialog2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596958260011" />
     <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1596898558662" />
     <state x="129" y="65" key="MergeDialog" timestamp="1596920926579">
       <screen x="0" y="0" width="1366" height="768" />
@@ -124,23 +124,27 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="395" y="101" width="910" height="566" key="MultipleFileMergeDialog/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596920926612" />
-    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1596924123822">
+    <state x="470" y="101" key="VCS.ChangeListViewerDialog" timestamp="1596958311465">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596924123822" />
+    <state x="470" y="101" key="VCS.ChangeListViewerDialog/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596958311465" />
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1596958267464">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596958267464" />
     <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1596898565118" />
-    <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596920580962">
+    <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596958306199">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596920580962" />
+    <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596958306199" />
     <state x="472" y="98" key="git4idea.branch.GitSmartOperationDialog" timestamp="1596920607714">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="472" y="98" key="git4idea.branch.GitSmartOperationDialog/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596920607714" />
-    <state x="398" y="176" key="git4idea.merge.GitPullDialog" timestamp="1596920574310">
+    <state x="398" y="176" key="git4idea.merge.GitPullDialog" timestamp="1596958303080">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="398" y="176" key="git4idea.merge.GitPullDialog/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596920574310" />
+    <state x="398" y="176" key="git4idea.merge.GitPullDialog/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596958303080" />
     <state x="483" y="285" key="git4idea.ui.GitStashDialog" timestamp="1596920280891">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
