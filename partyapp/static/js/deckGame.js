@@ -29,7 +29,7 @@ function pickACard(){
     
     var avail_suites = Object.keys(cards);
 
-    if (avail_suites.length === 0 && cards.constructor === Object) {openModal(); return;}
+    if (avail_suites.length === 0 && cards.constructor === Object) {openModalDeck(); return;}
 
     else {
         curr_suite = Object.keys(cards)[Math.floor((Math.random() * avail_suites.length))];
@@ -192,7 +192,7 @@ document.addEventListener('click', function (event) {
 }, false);
 
 
-function openModal(){
+function openModalDeck(){
     var modal = document.getElementById("myModal");
     modal.style.display = "block";
     document.querySelector('.collected-points').innerHTML="The deck is finished!"
