@@ -1,0 +1,121 @@
+{% extends 'partyapp/games/gamebase.html' %}
+
+{% block game %}
+
+  {% load static %}
+    <center>
+  <div class="ponggame">
+      <br>
+    <h1 class="cuptitle">Cup Pong.</h1>
+      <h5>Play the game of cup pong in real life- but online simultaneously!</h5>
+      <p>The cups you score will apear here and add up to your score. </p>
+      <p>The more cups you make, the higher your score!</p>
+
+      <br></br>
+      <div style="width:300px;">
+        <div class="row">
+            <div class="col"> 
+                <div id="cup-1" class="back-cup dot"></div>
+            </div>
+            <div class="col"> 
+                <div id="cup-2" class="back-cup dot"></div>
+            </div>
+            <div class="col"> 
+                <div id="cup-3" class="back-cup dot"></div>
+            </div>
+        </div>
+        <div class="row" style="width:250px;">
+            <div class="col">
+                <div id="cup-4" class="med-cup dot"></div>
+            </div>
+            <div class="col">
+                <div id="cup-5" class="med-cup dot"></div>
+            </div>
+        </div>
+        
+        <div class="row" >
+            <div class="col">
+            <div id="cup-6" class="front-cup dot"></div>
+            
+        </div>
+
+        </div>
+        <br>
+        <h5 id="points">Points: 0</h5>
+        <div class="legend">
+            <h6 style="text-decoration: underline;">Score Legend: </h6>
+            <p>front cup -- 10 points</p>
+            <p>middle cups -- 5 points</p>
+            <p>back cups -- 1 point</p>
+        </div>
+        <br></br>
+
+         <!-- The Modal -->
+        <div id="myModal" class="modal">
+        <div class="modal-content">
+          <h1 style="font-family: 'Gochi Hand', cursive;">Game Over.</h1>
+          <p style="font-family: 'Gochi Hand', cursive;" class="collected-points"></p>
+          <a href="{%url "gamedash" %}">
+            <div style="font-family: 'Gochi Hand', cursive; width: 200px;" class="go-back-btn">Back to Game Menu</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+        var points=0;
+
+        //click on it for now-lol im lazy
+        $('#cup-1').click(function(){
+            points=points+1;
+            document.querySelector('#cup-1').style.cssText="border: 3px solid black"
+            
+            changed();
+        });
+        $('#cup-2').click(function(){
+            points=points+1;
+            document.querySelector('#cup-2').style.cssText="border: 3px solid black"
+            changed();
+        });
+        $('#cup-3').click(function(){
+            points=points+1;
+            document.querySelector('#cup-3').style.cssText="border: 3px solid black"
+            changed();
+        });
+        $('#cup-4').click(function(){
+            points=points+5;
+            document.querySelector('#cup-4').style.cssText="border: 3px solid black"
+            changed();
+        });
+        $('#cup-5').click(function(){
+            points=points+5;
+            document.querySelector('#cup-5').style.cssText="border: 3px solid black"
+            changed();
+        });
+        $('#cup-6').click(function(){
+            points=points+10;
+            document.querySelector('#cup-6').style.cssText="border: 3px solid black"
+            changed();
+        });
+
+        function changed(){
+            document.getElementById('points').innerHTML="Points: "+points;
+
+            if (points==23){
+                console.log("done");
+                openModalPong();
+            }
+        }
+        function openModalPong(){
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+            document.querySelector('.collected-points').innerHTML="You collected "+points+" points!"
+        }
+    </script>
+      
+     
+     
+      
+      
+  </div>
+</center>
+{% endblock %}

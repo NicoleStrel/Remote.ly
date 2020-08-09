@@ -1,0 +1,91 @@
+{% extends 'partyapp/letsplay.html' %}
+{% block map %}
+    {% load static %}
+    
+    <script>
+        var names=[];
+    </script>
+    <style>
+        /* Set the size of the div element that contains the map */
+       #map {
+         height: 400px;  /* The height is 400 pixels */
+         width: 100%;  /* The width is the width of the web page */
+        }
+     </style>
+     <!--The div element for the map -->
+     <div id="map"></div>
+     {% for user in users_html %}    
+        <p id="temp"style="display:none">{{ user.user}}</p>
+        <script>
+           names.push(document.getElementById("temp").innerHTML);
+           var element = document.getElementById("temp"); //remove
+           element.parentNode.removeChild(element);
+        </script>
+        
+     {% endfor %}
+
+     <script>
+         /*
+         var locations=[];
+         function addLoc(long, lat){
+            locations.push({lat: lat, lng: lng})
+         } 
+         */  
+        // Initialize and add the map
+        
+        function initMap() {
+            var locations=[];
+            
+            console.log(names);
+
+            var users= '{{ users|escapejs }}';
+            var users_cleaned=JSON.parse(users);
+            console.log(users_cleaned);
+            for (user in users_cleaned){
+                var lat=users_cleaned[user].fields.lat
+                var long=users_cleaned[user].fields.lng
+                var name=users_cleaned[user].fields.user
+                var uluru = {lat: parseInt(lat), lng: parseInt(long)};
+                
+                locations.push(uluru);
+            }
+        
+            // The location of Uluru
+            var uluru = {lat: -25.344, lng: 131.036}; //need to figure out how to get the current user**
+
+            var pinIcon = new google.maps.MarkerImage(
+                "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+                new google.maps.Size(21, 34),
+                new google.maps.Point(0,0),
+                new google.maps.Point(10, 34),
+                new google.maps.Size(2, 4));
+            const image = {
+                    url:
+                    "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+                    // This marker is 20 pixels wide by 32 pixels high.
+                    size: new google.maps.Size(50, 50),
+            }
+
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 4, center: uluru});
+            // The marker, positioned at Uluru
+            for (let i=0; i<locations.length; i++){
+                var marker = new google.maps.Marker({   //need to customize marker once we have image in UserProfile
+                    label:   names[i], //color: "#ffffff", size: "5px" },
+                    //icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+                    position: locations[i], 
+                    map: map});
+            }
+           
+        }
+        
+        </script>
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIwMRPjuiypjnc4g0fqMrQ5mZzQ-CgZg0&callback=initMap">
+    </script>
+
+
+     
+   
+{% endblock %}

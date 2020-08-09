@@ -11,8 +11,7 @@
       <change afterPath="$PROJECT_DIR$/partyapp/templates/partyapp/gamedash.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/partyapp/templates/partyapp/map.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/partyapp/templates/partyapp/map2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmls/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmls/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/partyapp/static/js/fishGame.js" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/static/js/fishGame.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/partyapp/static/styles/games.css" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/static/styles/games.css" afterDir="false" />
@@ -127,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596958331697</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="updated gitignore to include pycache">
+      <created>1596958676172</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1596958676172</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -141,22 +147,23 @@
     <MESSAGE value="fixed a signup error" />
     <MESSAGE value="some clean up" />
     <MESSAGE value="updated the all hands on the deck game" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated the all hands on the deck game" />
+    <MESSAGE value="updated gitignore to include pycache" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated gitignore to include pycache" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="312" y="51" width="691" height="621" key="CommitChangelistDialog2" timestamp="1596958330793">
+    <state x="312" y="51" width="691" height="621" key="CommitChangelistDialog2" timestamp="1596958906645">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="312" y="51" width="691" height="621" key="CommitChangelistDialog2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596958330793" />
+    <state x="312" y="51" width="691" height="621" key="CommitChangelistDialog2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596958906645" />
     <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1596898558662" />
-    <state x="129" y="65" key="MergeDialog" timestamp="1596920926579">
+    <state x="129" y="65" key="MergeDialog" timestamp="1596958863169">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="129" y="65" key="MergeDialog/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596920926579" />
-    <state x="395" y="101" width="910" height="566" key="MultipleFileMergeDialog" timestamp="1596920926612">
+    <state x="129" y="65" key="MergeDialog/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596958863169" />
+    <state x="395" y="101" width="910" height="566" key="MultipleFileMergeDialog" timestamp="1596958873279">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="395" y="101" width="910" height="566" key="MultipleFileMergeDialog/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596920926612" />
+    <state x="395" y="101" width="910" height="566" key="MultipleFileMergeDialog/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596958873279" />
     <state x="470" y="101" key="VCS.ChangeListViewerDialog" timestamp="1596958311465">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -166,10 +173,10 @@
     </state>
     <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596958267464" />
     <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1596898565118" />
-    <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596958306199">
+    <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596958692654">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596958306199" />
+    <state x="492" y="302" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596958692654" />
     <state x="472" y="98" key="git4idea.branch.GitSmartOperationDialog" timestamp="1596920607714">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
