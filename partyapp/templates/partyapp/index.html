@@ -8,10 +8,9 @@
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xl-6" >
                
-                <img src="{% static "img/bluedot.jpg" %}" style="width: 450px; ">
-                <div style="font-family: Montserrat; font-weight: bold;  position: absolute; color: white; top: 50%; left: 45%; transform: translate(-50%, -50%);"><h1 style="font-size: 60px;">REMOTE.LY</h1></div>
-                
-
+              
+                <img src="{% static "img/logo.png" %}" style="width: 450px; ">
+                <div style="font-family: Montserrat; font-weight: bold; text-align: center; "><h1 style="font-size: 60px;">REMOTE.LY</h1></div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 col-xl-6" style="text-align:center;  position: left;">
               <a href="{%url "account_login" %}">
@@ -20,8 +19,10 @@
               <a href="{%url "account_signup" %}">
                 <button type="button" class="btn rounded-pill" style="font-weight: bold; background-color: #F4A216; color: white; height: 50px; width: 250px; margin-top: 15px; font-family: Montserrat;">Sign Up</button><br>
               </a>
+              <a href="{%url "guest" %}">
                 <button type="button" class="btn rounded-pill"  style="font-weight: bold; background-color: #2A9D85; color: white; height: 50px; width: 250px; margin-top: 15px; font-family: Montserrat;">Play as Guest</button><br>
-            </div>
+              </a>
+              </div>
         </div>
 
     </div>

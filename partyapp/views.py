@@ -97,7 +97,19 @@ def gamedash(request):
         "description": "Find a game and play it :)",
     }) 
 
-
+def guest(request):
+    return render(request, "partyapp/guest.html", {
+        "page_title": "Remote.ly - Guest Sign Up ",
+    })
+def friends(request):
+    return render(request, "partyapp/addfriend.html", {
+        "page_title": "Remote.ly - Friends ",
+    })
+    
+def friendslist(request):
+    return render(request, "partyapp/friendlist.html", {
+        "page_title": "Remote.ly - Friends ",
+    })
 
 #def save_user_geolocation_and_image(request):
 
