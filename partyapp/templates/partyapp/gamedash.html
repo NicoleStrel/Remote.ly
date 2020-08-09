@@ -49,52 +49,55 @@
           </form> 
         </div>
       </nav><hr>
-
-      
-    <div class="container">
-      <div class="row">
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xl-2" >
-          </div>
-          <div class="col-lg-8 col-md-8 col-sm-12 col-xl-8" style="text-align:center; margin-top: 10px;">
-              <h3 style=" font-family: Montserrat; font-weight: bold; ">Let's Play!</h3>
-              <p  style=" font-family: Montserrat; font-weight: bold; ">Select a game and customize your own games using external link!</p>
-
-              <div class="card-group">
-                  <div class="card shadow p-3 mb-5 bg-transparent rounded" style="margin-right: 15px; height: 100%; cursor: pointer;">
-                    <a href="{%url "deckgame" %}"> <img class="card-img-top" src="{% static "img/deck.jpg" %}" ></a>
-                    <div class="card-body">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xl-2" >
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xl-8" style="text-align:center; margin-top: 10px;">
+                <h3 style=" font-family: Montserrat; font-weight: bold; ">Let's Play!</h3>
+                <p  style=" font-family: Montserrat; font-weight: bold; ">Select a game and customize your own games using the external link!</p>
+    
+                <div class="card-group" style="display: block;">
+                  <div class="card shadow p-3 mb-5 bg-white rounded" style="margin-right: 15px; height: 250px;">
+                    <a href="{%url "deckgame" %}">  
+                      <img class="card-img-top" src="{% static "img/deck.jpg" %}" >
+                    </a>
+                    <div class="card-body" style="padding:0px; padding-top:0.2em">
                       <h5 class="card-title">All hands on Deck</h5>
                       
                     </div>
                   </div>
-                  <div class="card shadow p-3 bg-transparent mb-5 bg-white rounded" style="margin-right: 15px; height: 100%;  cursor: pointer;">
-                    <a href="{%url "fishgame" %}"><img class="card-img-top" src="{% static "img/fishiesdisplay.png" %}"></a>
-                    <div class="card-body">
-                      <h5 class="card-title">Catch the fishies</h5>
+                  <div class="card shadow p-3 mb-5 bg-white rounded" style="margin-right: 15px; height: 250px;">
+                    <a href="{%url "ponggame" %}">
+                      <img class="card-img-top" src="{% static "img/pongdisplay.png" %}" >
+                    </a>
+                    <div class="card-body" style="padding:0px; padding-top:0.2em">
+                      <h5 class="card-title">Cup Pong</h5>
                       
                     </div>
                   </div>
-                  <div class="card shadow p-3 bg-transparent mb-5 bg-white rounded" style="margin-right: 15px; height: 100%;  cursor: pointer;">
-                    <a href="{%url "ponggame" %}"><img class="card-img-top" src="{% static "img/pongdisplay.png" %}" ></a>
-                    <div class="card-body">
-                      <h5 class="card-title">Cup Drop</h5>
-                      
+                    <div class="card shadow p-3 mb-5 bg-white rounded" style="margin-right: 15px; height: 250px; ">
+                        <a href="{%url "fishgame" %}">
+                      <img class="card-img-top" src="{% static "img/fishiesdisplay.png" %}">
+                    </a>
+                      <div class="card-body" style="padding:0px; padding-top:0.2em">
+                        <h5 class="card-title" style="margin:0; ">Catch the Fishies</h5>
+                        
+                      </div>
                     </div>
+                  
+                   
+                    
                   </div>
-                </div>
-                
+                  </div>
+    
+                  <button class="btn btn-light rounded-pill" style="width: 200px; ">Customize</button>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xl-2" style="margin-top: 100px;">
+            </div>
 
-                <button class="btn btn-light rounded-pill" style="width: 200px;">Customize</button>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xl-2" style="margin-top: 100px;">
-          </div>
-      </div>
-
-  </div>
-
-
-
-
+            
+        </div>
 
     
 </body>
