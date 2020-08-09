@@ -1,0 +1,78 @@
+{% extends 'partyapp/base.html' %}
+
+{% block content %}
+
+  {% load static %}
+<body style="background-color: #E9C46A; ">
+
+
+    <div class="container">
+        <br/>
+        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <form class=" card-sm">
+                                    <div class="card-body row no-gutters align-items-center">
+                                        <div class="col-auto">
+                                            <i class="fas fa-search h4 text-body"></i>
+                                        </div>
+                                        <!--end of col-->
+                                        <div class="col">
+                                            <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search for friends">
+                                        </div>
+                                        <!--end of col-->
+                                        <div class="col-auto">
+                                            <button class="btn btn-lg btn-success" type="submit">Search</button>
+                                        </div>
+                                        <!--end of col-->
+                                    </div>
+                                </form>
+                            </div>
+                            <!--end of col-->
+                        </div>
+    </div>
+
+    <hr>
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="people-nearby">
+                  
+                  <div class="nearby-user">
+                    <div class="row">
+                      <div class="col-md-2 col-sm-2">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="user" class="profile-photo-lg">
+                      </div>
+                      <div class="col-md-7 col-sm-7">
+                        <h5><a href="#" class="profile-link">Sophia Page</a></h5>
+                        <p>@sophie</p>
+                        <p class="text-muted">500m away</p>
+                      </div>
+                      <div class="col-md-3 col-sm-3">
+                        <button class="btn btn-primary pull-right">Add Friend</button>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <div class="nearby-user">
+                    <div class="row">
+                      <div class="col-md-2 col-sm-2">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="user" class="profile-photo-lg">
+                      </div>
+                      <div class="col-md-7 col-sm-7">
+                        <h5><a href="#" class="profile-link">Cris Haris</a></h5>
+                        <p>@chrish</p>
+                        <p class="text-muted">1km away</p>
+                      </div>
+                      <div class="col-md-3 col-sm-3">
+                        <button class="btn btn-primary pull-right">Add Friend</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
