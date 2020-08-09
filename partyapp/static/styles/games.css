@@ -28,6 +28,58 @@
 /* ---------------------------------
      ALL HANDS ON DECK GAME
 ------------------------------------*/
+.suite {
+    width: 50px;
+    border: none;
+    display: block;
+    margin: auto;
+}
+
+.num-top {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: black !important;
+}
+
+.num-bottom {
+    text-align: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    transform: rotate(-180deg);
+    color: black !important;
+}
+
+.poker-table{
+    position: relative !important;
+    width: var(--width);
+    height: 540px;
+    z-index: 1;
+    margin-top: 0.5em;
+}
+
+.poker-bg {
+    position: absolute;
+    width: var(--width);
+    border-radius: 5em;
+    border-collapse: separate; 
+    display: block;
+    margin-left: 0;
+}
+
+.card {
+    position: absolute !important;
+    width: 150px;
+    height: 200px;
+    background-color: white;
+    z-index: 2;
+    left: 50%;
+    margin-top: 40px;
+    margin-left: -75px !important;
+}
+
 .deck-game {
     background-color: var(--black);
 }
@@ -43,6 +95,28 @@
     font-size: 4em;
     padding-top: 0.5em;
     margin: 0;
+}
+
+.start{
+
+    width: 130px;
+    border: 2px solid var(--med-blue);
+    color: white;
+    background-color: var(--med-blue);
+    border-radius: 1.5em;
+    padding: 0.4em 0.9em;
+    cursor: pointer;
+  }
+
+  .draw-a-card{
+    width: 150px;
+    font-size: 14px;
+    border: 2px solid var(--med-blue);
+    color: white;
+    background-color: var(--med-blue);
+    border-radius: 1.5em;
+    padding: 0.4em 0.9em;
+    cursor: pointer;
 }
 
 /* --------------------
@@ -215,8 +289,6 @@
     }
 
 }
-
-
 
 @media screen and (max-width: 410px) {
 

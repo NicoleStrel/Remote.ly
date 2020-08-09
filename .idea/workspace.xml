@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45ab5961-f364-4933-866c-37a8e604e19f" name="Default Changelist" comment="">
+    <list default="true" id="45ab5961-f364-4933-866c-37a8e604e19f" name="Default Changelist" comment="some clean up">
+      <change afterPath="$PROJECT_DIR$/partyapp/static/img/deck-game-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/partyapp/static/js/deckGame.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partyapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partyapp/static/styles/games.css" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/static/styles/games.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partyapp/templates/partyapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/templates/partyapp/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partyapp/templates/partyapp/games/deckgame.html" beforeDir="false" afterPath="$PROJECT_DIR$/partyapp/templates/partyapp/games/deckgame.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +42,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Arsh Noor Amin\RollForHacking\partyapp\static\img" />
       <recent name="C:\Users\Arsh Noor Amin\RollForHacking\partyapp\templates\account" />
       <recent name="C:\Users\Arsh Noor Amin\RollForHacking\partyapp\templates" />
       <recent name="C:\Users\Arsh Noor Amin\RollForHacking\partyapp" />
@@ -82,8 +88,18 @@
       <option name="project" value="LOCAL" />
       <updated>1596924118268</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="some clean up">
+      <created>1596925054935</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596925054935</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="requirements.txt updated for all_auth" />
@@ -91,13 +107,14 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/hands_on_deck'" />
     <MESSAGE value="Merge remote-tracking branch 'origin/hands_on_deck'&#10;&#10;# Conflicts:&#10;#&#9;db.sqlite3&#10;#&#9;partyapp/static/styles/games.css&#10;#&#9;partyapp/templates/partyapp/signin.html&#10;#&#9;partyapp/templates/partyapp/signup.html&#10;#&#9;partyapp/views.py&#10;#&#9;requirements.txt&#10;#&#9;rollforhacking/partyapp/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/admin.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/models.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/__pycache__/views.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/migrations/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/partyapp/templates/account/login.html&#10;#&#9;rollforhacking/partyapp/templates/partyapp/signin.html&#10;#&#9;rollforhacking/rollforhacking/__pycache__/__init__.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/settings.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/urls.cpython-38.pyc&#10;#&#9;rollforhacking/rollforhacking/__pycache__/wsgi.cpython-38.pyc&#10;#&#9;rollforhacking/urls.py" />
     <MESSAGE value="fixed a signup error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed a signup error" />
+    <MESSAGE value="some clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="some clean up" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="354" y="-768" key="CommitChangelistDialog2" timestamp="1596924117083">
+    <state x="354" y="-768" key="CommitChangelistDialog2" timestamp="1596925083349">
       <screen x="-158" y="-1050" width="1680" height="1050" />
     </state>
-    <state x="354" y="-768" key="CommitChangelistDialog2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596924117083" />
+    <state x="354" y="-768" key="CommitChangelistDialog2/0.0.1366.768/-158.-1050.1680.1050@0.0.1366.768" timestamp="1596925083349" />
     <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1596898558662" />
     <state x="129" y="65" key="MergeDialog" timestamp="1596920926579">
       <screen x="0" y="0" width="1366" height="768" />
