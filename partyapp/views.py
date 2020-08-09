@@ -45,6 +45,24 @@ def avatar(request):
 
 def letsplay(request):
     #users= UserProfile.objects.all()
+    '''
+    if request.method == 'POST':
+        latitude = request.POST['lat']
+        longitude = request.POST['long']
+        UserProfile.create(
+            user = request.user,
+            lat= latitude,
+            lng = longitude,
+            points= 0,
+        )
+        console.log("created")
+
+        
+        json_serializer = serializers.get_serializer("json")()
+        users = json_serializer.serialize(UserProfile.objects.all())
+        users_html=UserProfile.objects.all()
+
+'''
     json_serializer = serializers.get_serializer("json")()
     users = json_serializer.serialize(UserProfile.objects.all())
     users_html=UserProfile.objects.all()
@@ -54,9 +72,24 @@ def letsplay(request):
         "page_title": "Remote.ly - Let's Play!",
         "description": "Are you ready to play fun games with your friends?",
     }) 
+    
+        
 
 def gamedash(request):
-    return render(request, "partyapp/gamedashboard.html", {
+    json_serializer = serializers.get_serializer("json")()
+    users = json_serializer.serialize(UserProfile.objects.all())
+    users_html=UserProfile.objects.all()
+    return render(request, "partyapp/map2.html", {
+        "users": users,
+        "users_html": users_html,
         "page_title": "Remote.ly - Games",
         "description": "Find a game and play it :)",
     }) 
+
+
+
+#def save_user_geolocation_and_image(request):
+
+   
+
+   

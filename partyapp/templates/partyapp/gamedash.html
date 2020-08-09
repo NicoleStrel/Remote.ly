@@ -1,4 +1,3 @@
-
 {% extends 'partyapp/base.html' %}
 
 {% block content %}
@@ -50,27 +49,53 @@
           </form> 
         </div>
       </nav><hr>
-
-
-
-
       <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xl-3" >
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xl-2" >
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xl-6" style="text-align:center; margin-top: 200px;">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xl-8" style="text-align:center; margin-top: 10px;">
                 <h3 style=" font-family: Montserrat; font-weight: bold; ">Let's Play!</h3>
-                <a href="{%url "gamedash" %}">
-                <button type="button" class="btn rounded-pill";  style="font-weight: bold; background-color: #E76F51; color: white; width: 250px; margin-top: 15px; font-family: Montserrat;">New Game</button><br>
-                </a>
-                <!--<button type="button" class="btn rounded-pill" ; style="font-weight: bold; background-color: #F4A216; color: white; width: 250px; margin-top: 15px; font-family: Montserrat;">Continue Game</button><br>-->
+                <p  style=" font-family: Montserrat; font-weight: bold; ">Select a game and customize your own games using the external link!</p>
+    
+                <div class="card-group">
+                  <div class="card shadow p-3 mb-5 bg-white rounded" style="margin-right: 15px; height: 250px;">
+                    <img class="card-img-top" src="..." >
+                    <div class="card-body" style="padding:0px; padding-top:0.2em">
+                      <h5 class="card-title">Cup Pong</h5>
+                      
+                    </div>
+                  </div>
+                    <div class="card shadow p-3 mb-5 bg-white rounded" style="margin-right: 15px; height: 250px; ">
+                        <a href="{%url "fishgame" %}">
+                      <img class="card-img-top" src="{% static "img/fishiesdisplay.png" %}">
+                    </a>
+                      <div class="card-body" style="padding:0px; padding-top:0.2em">
+                        <h5 class="card-title" style="margin:0; ">Catch the Fishies</h5>
+                        
+                      </div>
+                    </div>
+                  
+                   
+                    <div class="card shadow p-3 mb-5 bg-white rounded" style="margin-right: 15px; height: 250px;">
+                      <a href="{%url "deckgame" %}">  
+                        <img class="card-img-top" src="" >
+                      </a>
+                      <div class="card-body" style="padding:0px; padding-top:0.2em">
+                        <h5 class="card-title">Kings</h5>
+                        
+                      </div>
+                    </div>
+                  </div>
+    
+                  <button class="btn btn-light rounded-pill" style="width: 200px; ">Customize</button>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xl-3" style="margin-top: 100px;">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xl-2" style="margin-top: 100px;">
             </div>
         </div>
 
-    </div>
-
     
 </body>
+
+
 {% endblock %}
+

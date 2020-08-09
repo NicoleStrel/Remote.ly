@@ -3,6 +3,11 @@
 {% block content %}
 
   {% load static %}
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
   <body  style="background-color: #E9C46A; ">
     <div class="container" style="margin-top: 100px; font-weight: bold; font-family: Montserrat;">
         <div class="row">
@@ -10,9 +15,18 @@
 
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6">
+                <!--<form method="post" next-url="{% url 'letsplay' %}">-->
+                {% csrf_token %}
                 <div style="text-align: center;">
-                    <h3 style=" font-weight: bold; font-family: Montserrat;">Welcome to Remote.ly, Name!</h3>
+                    <h3 style=" font-weight: bold; font-family: Montserrat;">Welcome to Remote.ly, {{form.username}}</h3>
                     <h5 style=" font-weight: bold; font-family: Montserrat; color: white;">Just a few more steps...</h5>
+                    <br>
+                    <h6 style=" font-weight: bold; font-family: Montserrat;">Click the button to get your coordinates:</h6>
+                    
+                    <button class="btn rounded-pill" style="background-color: #2A9D85; width: 200px;  font-weight: bold; font-family: Montserrat; color: white;"onclick="getLocation()">Get Your Location</button>
+                    <p id="demo" style="margin-top:0.5em; padding-left:1em"></p>
+                    
+                
                     <h6 style=" font-weight: bold; font-family: Montserrat;"> Choose an Avatar:</h6>
                     <hr>
 
@@ -31,7 +45,7 @@
 
                     <div class="row">
                         <div class="col"> 
-                          <img id="avatar-1" onClick="updateAv(1);" src="{% static "img/icons-images/emoji.png" %}" />
+                          <img id="avatar-1" style="border: solid 1px white;" onClick="updateAv(1);" src="{% static "img/icons-images/emoji.png" %}" />
                         </div>
                         <div class="col">
                             <img id="avatar-2" onClick="updateAv(2);" src="{% static "img/icons-images/029-woman.png" %}" />
@@ -61,11 +75,11 @@
                       </div>
 
                    <hr>
-                   <a href="{%url "letsplay" %}">
-                        <button class="btn rounded-pill" style="background-color: #F4A261; width: 200px;  font-weight: bold; font-family: Montserrat; color: white;">Next ></button>
-                    </a>
+                   <!--<a href="{%url "letsplay" %}">-->
+                        <button type="button" class="btn rounded-pill form-control" id="btn_submit" style="background-color: #F4A261; width: 200px;  font-weight: bold; font-family: Montserrat; color: white;" disabled>Next ></button>
+                    <!--</a>-->
                 </div>
-
+           <!-- </form>-->
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xl-3">
 
