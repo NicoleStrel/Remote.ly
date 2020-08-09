@@ -45,7 +45,7 @@ def avatar(request):
 
 def letsplay(request):
     #users= UserProfile.objects.all()
-    '''
+    
     if request.method == 'POST':
         latitude = request.POST['lat']
         longitude = request.POST['long']
@@ -61,18 +61,25 @@ def letsplay(request):
         json_serializer = serializers.get_serializer("json")()
         users = json_serializer.serialize(UserProfile.objects.all())
         users_html=UserProfile.objects.all()
-
-'''
-    json_serializer = serializers.get_serializer("json")()
-    users = json_serializer.serialize(UserProfile.objects.all())
-    users_html=UserProfile.objects.all()
-    return render(request, "partyapp/map.html", {
+        return render(request, "partyapp/map.html", {
         "users": users,
         "users_html": users_html,
         "page_title": "Remote.ly - Let's Play!",
         "description": "Are you ready to play fun games with your friends?",
-    }) 
-    
+        }) 
+
+    # uncomment if you'd like to see the working one
+    ''' 
+        json_serializer = serializers.get_serializer("json")()
+        users = json_serializer.serialize(UserProfile.objects.all())
+        users_html=UserProfile.objects.all()
+        return render(request, "partyapp/map.html", {
+            "users": users,
+            "users_html": users_html,
+            "page_title": "Remote.ly - Let's Play!",
+            "description": "Are you ready to play fun games with your friends?",
+        }) 
+    '''
         
 
 def gamedash(request):
