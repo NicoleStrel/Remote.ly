@@ -100,7 +100,7 @@ document.addEventListener('click', function (event) {
         setInterval(function () { }, 3000); //wait 3 sec for now!
 
         //start timer
-        startTimer(60, document.querySelector('#time'),button, extra);
+        startTimer(30, document.querySelector('#time'),button, extra);
     }
     else{
         return;

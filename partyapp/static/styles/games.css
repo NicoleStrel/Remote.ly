@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
 .game-header{
     height: 100px;
@@ -15,13 +16,14 @@
 :root {
     --light-blue: rgb(176, 216, 255);
     --med-blue: rgb(70, 139, 243);
-
+    /**for pong game **/
+    --green-color: #2A9D85;
     /** for deck game **/
     --poker-red: rgb(192, 57, 43);
     --black: rgb(27, 27, 27);
 
     --width: 800px;
-    --shorted-width: 770px; /* for responsiveness with animation*/
+    --shorted-width: 740px; /* for responsiveness with animation*/
 
 }
 
@@ -237,5 +239,44 @@
         width: 70px;
     }
 
+}
+
+
+/* --------------------
+     PONG GAME
+----------------------*/
+.ponggame{
+    background-color: var(--green-color);
+    font-family: 'Gochi Hand', cursive;
+}
+.ponggame h5{
+    font-family: 'Gochi Hand', cursive;
+    font-size: 2em;
+    color: white;
+}
+.ponggame h6{
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.5em;
+}
+.cuptitle{
+    font-family: 'Gochi Hand', cursive;
+    color: white;
+    font-size: 5em;
+}
+.ponggame p{
+    margin:0;
+}
+
+.dot{
+    height: 70px;
+  width: 70px;
+  background-color: rgb(228, 102, 102);
+  border: 3px solid white;
+  border-radius: 50%;
+ text-align: center;
+}
+
+.legend{
+    border: 1px solid white;
 }
 

@@ -23,6 +23,10 @@ def deckgame(request):
     return render(request, "partyapp/games/deckgame.html", {
         "page_title": "All Hands On Deck"
     })
+def cupgame(request):
+    return render(request, "partyapp/games/ponggame.html", {
+        "page_title": "Cup Pong"
+    })
 
 # def signin(request):
 #     return render(request, "partyapp/signin.html", {
