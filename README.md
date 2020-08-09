@@ -1,5 +1,17 @@
 # RollForHacking
-to do
+### Functional Features
+- Login/Sign in Auth
+- The 3 availible games
+- Map of friends
+- Avatar/ location selection
+
+### Prototypes
+- friendslist page
+- friends search page
+- login as guest
+- customize games button
+- making groups
+- friend invites
 
 ## Local Set up
 - Clone GitHub repository locally `git clone [repo-link]`
